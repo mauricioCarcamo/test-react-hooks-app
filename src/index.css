@@ -1,7 +1,7 @@
 body {
-    margin: 20px;
+    margin: 20px !important;
 }
 
 button {
-    margin-right: 10px;
+    margin-right: 10px !important;
 }
