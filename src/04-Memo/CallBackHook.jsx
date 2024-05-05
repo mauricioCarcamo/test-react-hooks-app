@@ -6,18 +6,12 @@ export const CallBackHook = () => {
     const [counter, setCounter] = useState(10)
 
     const incrementFather = useCallback( 
-        () => { setCounter( value => value + 1 ) }, [],
+        (step) => { setCounter( value => value + step ) }, [],
     )
 
     useEffect(() => {
       console.log("Efecto increment father");
     }, [incrementFather])
-    
-
-
-    
-
-        
 
     return (
         <>
